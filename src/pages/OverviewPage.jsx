@@ -1,6 +1,7 @@
 import Header from "../components/common/Header";
 import { motion } from "framer-motion";
 import StatCard from "../components/common/StatCard";
+import SalesOverviewChart from "../components/overview/SalesOverviewChart";
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
 
 const OverviewPage = () => {
@@ -16,19 +17,15 @@ const OverviewPage = () => {
           transition={{ duration: 1 }}
         >
           {/* TODO: Turn this into a data-mapped component */}
-          <StatCard 
-            name="Total Sales" icon={Zap} value="$12,345" color="#6366F1"
-          />
-          <StatCard 
-            name="New Users" icon={Users} value="1,234" color="#8B5CF6"
-          />
-          <StatCard 
-            name="Total Products" icon={ShoppingBag} value="459" color="#EC4899"
-          />
-          <StatCard 
-            name="Conversion Rate" icon={BarChart2} value="78%" color="#10B981"
-          />
+          <StatCard name="Total Sales" icon={Zap} value="$12,345" color="#6366F1" />
+          <StatCard name="New Users" icon={Users} value="1,234" color="#8B5CF6" />
+          <StatCard name="Total Products" icon={ShoppingBag} value="459" color="#EC4899" />
+          <StatCard name="Conversion Rate" icon={BarChart2} value="78%" color="#10B981" />
         </motion.div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <SalesOverviewChart />
+        </div>
       </main>
     </div>
   )
