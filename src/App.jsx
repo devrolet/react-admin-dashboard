@@ -5,9 +5,13 @@ import ProductsPage from "./pages/ProductsPage";
 
 import Sidebar from "./components/Sidebar";
 
+// TODO: CREATE L/D MODE: STEP ONE: OVERALL APP COLOR/TEXT from 900 to 100
+// TODO: CREATE L/D MODE: STEP TWO: OVERALL BG COLOR/GRADIENT from 900/800 to 100/200
+
 function App() {
 
   return (
+    
     <div className='flex h-screen bg-gray-900 text-gray-100 overflow-hidden'>
 
       {/* Background */}
