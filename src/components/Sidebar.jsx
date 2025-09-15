@@ -14,13 +14,13 @@ import { Link } from "react-router-dom";
 
 // TODO: Adapt to fit eventual use case, maybe add model for Typescript uses
 const SIDEBAR_ITEMS = [
-  { name: "Overview", icon: BarChart2, color: "#0ad2ff", path: "/" },
-  { name: "Products", icon: ShoppingBag, color: "#2962ff", path: "/products" },
-  { name: "Users", icon: Users, color: "#9500ff", path: "/users" },
-  { name: "Sales", icon: DollarSign, color: "#ff0059", path: "/sales" },
-  { name: "Orders", icon: ShoppingCart, color: "#ff8c00", path: "/orders" },
-  { name: "Analytics", icon: TrendingUp, color: "#b4e600", path: "/analytics" },
-  { name: "Settings", icon: Settings, color: "#0fffdb", path: "/" }
+  { name: "Overview", icon: BarChart2, color: "#0ad2ff", href: "/" },
+  { name: "Products", icon: ShoppingBag, color: "#2962ff", href: "/products" },
+  { name: "Users", icon: Users, color: "#9500ff", href: "/users" },
+  { name: "Sales", icon: DollarSign, color: "#ff0059", href: "/sales" },
+  { name: "Orders", icon: ShoppingCart, color: "#ff8c00", href: "/orders" },
+  { name: "Analytics", icon: TrendingUp, color: "#b4e600", href: "/analytics" },
+  { name: "Settings", icon: Settings, color: "#0fffdb", href: "/settings" }
 ];
 
 const Sidebar = () => {
