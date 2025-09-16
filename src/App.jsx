@@ -1,10 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 
+import Sidebar from "./components/Sidebar";
+
 import OverviewPage from "./pages/OverviewPage";
 import ProductsPage from "./pages/ProductsPage";
 import UsersPage from "./pages/UsersPage";
+import SalesPage from "./pages/SalesPage";
 
-import Sidebar from "./components/Sidebar";
+
 
 // TODO: CREATE L/D MODE: STEP ONE: OVERALL APP COLOR/TEXT from 900 to 100
 // TODO: CREATE L/D MODE: STEP TWO: OVERALL BG COLOR/GRADIENT from 900/800 to 100/200
@@ -26,6 +29,7 @@ function App() {
         <Route path="/" element={<OverviewPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/users" element={<UsersPage />} />
+        <Route path="/sales" element={<SalesPage />} />
       </Routes>
     </div>
   )
