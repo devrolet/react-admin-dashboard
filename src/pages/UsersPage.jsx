@@ -1,10 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { UserCheck, UserPlus, UsersIcon, UserX } from "lucide-react";
 
 import Header from "../components/common/Header"
 import StatCard from "../components/common/StatCard";
 import UsersTable from "../components/users/UsersTable";
-import { UserCheck, UserPlus, UsersIcon, UserX } from "lucide-react";
+import UserGrowthChart from "../components/users/UserGrowthChart";
+import UserActivityHeatmap from "../components/users/UserActivityHeatmap";
+import UserDemographicChart from "../components/users/UserDemographicChart";
+
 
 const userStats = {
   totalUsers: 152845,
@@ -52,6 +56,13 @@ const UsersPage = () => {
         </motion.div>
 
         <UsersTable />
+
+        {/* USER CHARTS */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+          <UserGrowthChart />
+          <UserActivityHeatmap />
+          <UserDemographicChart />
+        </div>
       </main>
     </div>
   )
