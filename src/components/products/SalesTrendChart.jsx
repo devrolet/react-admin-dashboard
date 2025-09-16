@@ -34,6 +34,7 @@ const SalesTrendChart = () => {
               itemStyle={{ color: "#E5E7EB"}}
             />
             <Legend />
+            {/* Change type for different looks. example: bump */}
             <Line type="monotone" dataKey="sales" stroke="#8B5CF6" strokeWidth={2} />
           </LineChart>
         </ResponsiveContainer>

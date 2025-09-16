@@ -4,7 +4,7 @@ import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
 
 import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
-import ProductTable from "../components/products/ProductTable";
+import ProductsTable from "../components/products/ProductsTable";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
 import SalesTrendChart from "../components/products/SalesTrendChart";
 
@@ -27,7 +27,7 @@ const ProductsPage = () => {
           <StatCard name="Total Revenue" icon={DollarSign} value="$543,219" color="#ef4444" />
         </motion.div>
 
-        <ProductTable />
+        <ProductsTable />
 
         {/* CHARTS */}
         <div
