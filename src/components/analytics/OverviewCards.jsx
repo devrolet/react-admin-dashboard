@@ -25,6 +25,19 @@ const OverviewCards = () => {
               <h3 className="text-sm font-medium text-gray-400">{item.name}</h3>
               <p className="mt-1 text-xl font-semibold text-gray-100">{item.value}</p>
             </div>
+
+            <div className={`p-3 rounded-full  bg-opacity-20 ${item.change >= 0 ? "bg-green-500" : "bg-red-500"}`}>
+              <item.icon 
+                className={`size-6 ${item.change >= 0 ? "text-green-500" : "text-red-500"}`}
+              />
+            </div>
+          </div>
+          <div className={`mt-4 flex items-center ${item.change >= 0 ? "text-green-500" : "text-red-500"}`}>
+            {item.change >= 0 ? <ArrowUpRight size="20" /> : <ArrowDownRight size="20" />}
+            <span className="ml-1 text-sm font-medium">{Math.abs(item.change)}%</span>
+            <span className="ml-2 text-sm text-gray-400">
+              vs. last period
+            </span>
           </div>
         </motion.div>
       ))}
