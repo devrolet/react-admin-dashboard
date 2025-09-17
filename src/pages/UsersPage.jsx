@@ -10,7 +10,7 @@ import UserActivityHeatmap from "../components/users/UserActivityHeatmap";
 import UserDemographicChart from "../components/users/UserDemographicChart";
 
 
-const userStats = {
+const USER_STATS = {
   totalUsers: 152845,
   newUsersToday: 253,
   activeUsers: 98520,
@@ -32,25 +32,25 @@ const UsersPage = () => {
           <StatCard 
             name="Total Users"
             icon={UsersIcon}
-            value={userStats.totalUsers.toLocaleString()}
+            value={USER_STATS.totalUsers.toLocaleString()}
             color="#6366F1"
           />
           <StatCard 
             name="New Users Today"
             icon={UserPlus}
-            value={userStats.newUsersToday}
+            value={USER_STATS.newUsersToday}
             color="#10B981"
           />
           <StatCard 
             name="ActiveUsers"
             icon={UserCheck}
-            value={userStats.activeUsers.toLocaleString()}
+            value={USER_STATS.activeUsers.toLocaleString()}
             color="#F59E0B"
           />
           <StatCard 
             name="Churn Rate"
             icon={UserX}
-            value={userStats.totalUsers.toLocaleString()}
+            value={USER_STATS.totalUsers.toLocaleString()}
             color="#EF4444"
           />
         </motion.div>
