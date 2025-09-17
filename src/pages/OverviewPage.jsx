@@ -8,6 +8,8 @@ import SalesOverviewChart from "../components/overview/SalesOverviewChart";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
 import SalesChannelChart from "../components/overview/SalesChannelChart";
 
+// TODO: Prepare application for deployment
+
 const OverviewPage = () => {
   return (
     <div className="flex-1 overflow-auto relative z-10">
