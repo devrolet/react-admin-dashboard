@@ -42,7 +42,7 @@ const UsersPage = () => {
             color="#10B981"
           />
           <StatCard 
-            name="ActiveUsers"
+            name="Active Users"
             icon={UserCheck}
             value={USER_STATS.activeUsers.toLocaleString()}
             color="#F59E0B"

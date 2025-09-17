@@ -1,8 +1,9 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 // TODO: Change name to month? SET TO MONTH: BE SURE NO ISSUES ARISE IN FUTURE
-const salesData = [
+const SALES_DATA = [
   { month: "Jul", sales: 4500 },
   { month: "Aug", sales: 4000 },
   { month: "Sep", sales: 4800 },
@@ -31,7 +32,7 @@ const SalesOverviewChart = () => {
 
       <div className="h-80">
         <ResponsiveContainer width={"100%"} height={"100%"}>
-          <LineChart data={salesData}>
+          <LineChart data={SALES_DATA}>
             <CartesianGrid strokeDasharray="3 3" stroke="#4B5563" />
             <XAxis dataKey={"month"} stroke="#9ca3af" />
             <YAxis stroke="#9ca3af" />
