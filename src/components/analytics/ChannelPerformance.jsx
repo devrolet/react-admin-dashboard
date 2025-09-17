@@ -11,7 +11,7 @@ const CHANNEL_DATA = [
   { name: "Email", value: 2390 }, 
 ];
 
-const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
+const COLORS = ["#08B2F5", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
 
 const ChannelPerformance = () => {
   return (

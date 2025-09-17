@@ -9,18 +9,19 @@ import {
   Users 
 } from "lucide-react";
 import { useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // TODO: Adapt to fit eventual use case, maybe add model for Typescript uses
 const SIDEBAR_ITEMS = [
-  { name: "Overview", icon: BarChart2, color: "#0ad2ff", href: "/" },
-  { name: "Products", icon: ShoppingBag, color: "#2962ff", href: "/products" },
-  { name: "Users", icon: Users, color: "#9500ff", href: "/users" },
-  { name: "Sales", icon: DollarSign, color: "#ff0059", href: "/sales" },
-  { name: "Orders", icon: ShoppingCart, color: "#ff8c00", href: "/orders" },
-  { name: "Analytics", icon: TrendingUp, color: "#b4e600", href: "/analytics" },
-  { name: "Settings", icon: Settings, color: "#0fffdb", href: "/settings" }
+  { name: "Overview", icon: BarChart2, color: "#08b2f5", href: "/" },
+  { name: "Products", icon: ShoppingBag, color: "#08b2f5", href: "/products" },
+  { name: "Users", icon: Users, color: "#08b2f5", href: "/users" },
+  { name: "Sales", icon: DollarSign, color: "#08b2f5", href: "/sales" },
+  { name: "Orders", icon: ShoppingCart, color: "#08b2f5", href: "/orders" },
+  { name: "Analytics", icon: TrendingUp, color: "#08b2f5", href: "/analytics" },
+  { name: "Settings", icon: Settings, color: "#08b2f5", href: "/settings" }
 ];
 
 const Sidebar = () => {
@@ -29,7 +30,9 @@ const Sidebar = () => {
   // TODO: CREATE L/D MODE: STEP THREE: SIDEBAR BG COLOR/TEXT CHANGE bg-gray-700 and 800 to bg-gray-100 and 200 on hover and borders
   return (
     <motion.div className={`relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 ${isSidebarOpen ? 'w-64' : 'w-20'}`} animate={{ width: isSidebarOpen ? 256:80 }}>
+      
       <div className="h-full bg-gray-700 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r border-gray-700">
+        {/* TODO: ADD A LOGO */}
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -39,6 +42,7 @@ const Sidebar = () => {
           <Menu size={24} />
         </motion.button>
         <nav className="mt-8 flex-grow">
+          
           {SIDEBAR_ITEMS.map((item) => (
             <Link key={item.href} to={item.href}>
               <motion.div className="flex items-center p-4 text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors mb-2">

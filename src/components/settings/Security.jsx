@@ -13,7 +13,7 @@ const Security = () => {
         onToggle={() => setTwoFactor(!twoFactor)}
       />
       <div className="mt-4">
-        <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-200">Change Password</button>
+        <button className="bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded transition duration-200">Change Password</button>
       </div>
 
     </SettingsSection>

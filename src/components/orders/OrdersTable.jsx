@@ -79,7 +79,7 @@ const OrdersTable = () => {
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100">
                   <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
                     order.status === "Delivered"
-                    ? "bg-green-100 text-green-800"
+                    ? "bg-sky-100 text-green-800"
                     : order.status === "Processing"
                     ? "bg-yellow-100 text-yellow-800"
                     : order.status === "Shipped"
@@ -94,7 +94,7 @@ const OrdersTable = () => {
                 </td>
 
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300 mr-2">
-                  <button className="text-indigo-400 hover:text-indigo-300 mr-2">
+                  <button className="text-sky-400 hover:text-sky-300 mr-2">
                     <Edit size={18} />
                   </button>
                    <button className="text-red-400 hover:text-red-300 mr-2">

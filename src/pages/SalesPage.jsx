@@ -27,7 +27,7 @@ const SalesPage = () => {
           transition={{ duration: 1 }}
         >
           {/* TODO: Turn this into a data-mapped component */}
-          <StatCard name="Total Revenue" icon={DollarSign} value={SALES_DATA.totalRevenue} color="#6366F1" />
+          <StatCard name="Total Revenue" icon={DollarSign} value={SALES_DATA.totalRevenue} color="#08B2F5" />
           <StatCard name="Avg. Order Value" icon={ShoppingCart} value={SALES_DATA.averageOrderTotal} color="#10B981" />
           <StatCard name="Conversion Rate" icon={TrendingUp} value={SALES_DATA.conversionRate} color="#F59e0B" />
           <StatCard name="Sales Growth" icon={CreditCard} value={SALES_DATA.salesGrowth} color="#ef4444" />

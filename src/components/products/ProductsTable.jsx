@@ -99,10 +99,10 @@ const ProductTable = () => {
                   {product.sales}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300 mr-2">
-                  <button className="text-indigo-400 hover:text-indigo-300 mr-2">
+                  <button className="text-sky-400 hover:text-sky-300 mr-2">
                     <Edit size={18} />
                   </button>
-                   <button className="text-red-400 hover:text-indigo-300 mr-2">
+                   <button className="text-red-400 hover:text-sky-300 mr-2">
                     <Trash2 size={18} />
                   </button>
                 </td>

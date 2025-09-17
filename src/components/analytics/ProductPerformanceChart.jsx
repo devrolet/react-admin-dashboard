@@ -33,7 +33,7 @@ const ProductPerformanceChart = () => {
                   itemStyle={{ color: "#E5E7EB"}}
                 />
                 <Legend />
-                <Bar dataKey="sales" fill="#6366F1" />
+                <Bar dataKey="sales" fill="#08B2F5" />
                 <Bar dataKey="revenue" fill="#8B5CF6" />
                 <Bar dataKey="profit" fill="#EC4899" />
               </BarChart>

@@ -10,7 +10,7 @@ const CATEGORY_DATA = [
   { name: "Tour", value: 1900 }, 
 ];
 
-const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
+const COLORS = ["#08B2F5", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
 
 const CategoryDistributionChart = () => {
   return (

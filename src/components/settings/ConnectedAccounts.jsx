@@ -32,7 +32,7 @@ const ConnectedAccounts = () => {
             <span className="text-gray-300">{account.name}</span>
           </div>
           <button 
-            className={`px-3 py-1 rounded ${account.connected ? "bg-green-600 hover:bg-green-700" : "bg-gray-600 hover:bg-gray-700"} transition duration-200`}
+            className={`px-3 py-1 rounded ${account.connected ? "bg-sky-600 hover:bg-sky-700" : "bg-gray-600 hover:bg-gray-700"} transition duration-200`}
             onClick={() => {
               setConnectedAccounts(
                 connectedAccounts.map(acc => {
@@ -51,7 +51,7 @@ const ConnectedAccounts = () => {
           </button>
         </div>
       ))}
-      <button className="mt-4 flex items-center text-indigo-400 hover:text-indigo-300 transition duration-200">
+      <button className="mt-4 flex items-center text-sky-400 hover:text-sky-300 transition duration-200">
         <Plus size={18} className="mr-2" /> Add Account
       </button>
     </SettingsSection>

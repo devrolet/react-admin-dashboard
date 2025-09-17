@@ -33,7 +33,7 @@ const UsersPage = () => {
             name="Total Users"
             icon={UsersIcon}
             value={USER_STATS.totalUsers.toLocaleString()}
-            color="#6366F1"
+            color="#08B2F5"
           />
           <StatCard 
             name="New Users Today"

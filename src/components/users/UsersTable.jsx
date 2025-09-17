@@ -88,7 +88,7 @@ const UsersTable = () => {
                 <td className="px-6 py-4 whitespace-nowrap">
                   <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
                     user.status === "Active"
-                    ? "bg-green-800 text-green-100"
+                    ? "bg-sky-800 text-green-100"
                     : "bg-red-800 text-red-100"
                   }`}>
                     {user.status}
@@ -97,12 +97,12 @@ const UsersTable = () => {
 
                   {/* TEXT EDIT/DELETE CODE: SAVE JIC */}
                 {/* <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
-                  <button className="text-indigo-400 hover:text-indigo-300 mr-2">Edit</button>
+                  <button className="text-sky-400 hover:text-sky-300 mr-2">Edit</button>
                   <button className="text-red-400 hover:text-red-300">Delete</button>
                 </td> */}
 
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300 mr-2">
-                  <button className="text-indigo-400 hover:text-indigo-300 mr-2">
+                  <button className="text-sky-400 hover:text-sky-300 mr-2">
                     <Edit size={18} />
                   </button>
                    <button className="text-red-400 hover:text-red-300 mr-2">

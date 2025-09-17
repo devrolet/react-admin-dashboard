@@ -11,7 +11,7 @@ const SettingsSection = ({icon: Icon, title, children}) => {
       transition={{ delay: 0.5 }}
     >
       <div className="flex items-center mb-4">
-        <Icon className="text-indigo-400 mr-4" size="24" />
+        <Icon className="text-sky-400 mr-4" size="24" />
         <h2 className="text-xl font-semibold text-gray-100">{title}</h2>
       </div>
       {children}

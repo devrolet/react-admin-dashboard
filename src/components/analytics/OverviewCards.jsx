@@ -26,7 +26,7 @@ const OverviewCards = () => {
               <p className="mt-1 text-xl font-semibold text-gray-100">{item.value}</p>
             </div>
 
-            <div className={`p-3 rounded-full  bg-opacity-20 ${item.change >= 0 ? "bg-green-500" : "bg-red-500"}`}>
+            <div className={`p-3 rounded-full  bg-opacity-20 ${item.change >= 0 ? "bg-sky-500" : "bg-red-500"}`}>
               <item.icon 
                 className={`size-6 ${item.change >= 0 ? "text-green-500" : "text-red-500"}`}
               />

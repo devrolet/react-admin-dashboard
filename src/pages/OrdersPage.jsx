@@ -31,7 +31,7 @@ const OrdersPage = () => {
             name="Total Orders"
             icon={ShoppingCart}
             value={ORDERS_STATS.totalOrders}
-            color="#6366F1"
+            color="#08B2F5"
           />
           <StatCard 
             name="Pending Orders"
