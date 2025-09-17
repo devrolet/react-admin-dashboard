@@ -33,12 +33,12 @@ const SalesChannelChart = () => {
               }}
               itemStyle={{ color: "#E5E7EB"}}
             />
-            <Legend />
             <Bar dataKey={"value"} fill="8884d8">
               {SALES_CHANNEL_DATA.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
             </Bar>
+            {/* <Legend /> */}
           </BarChart>
         </ResponsiveContainer>
       </div>
