@@ -4,6 +4,8 @@ import { CheckCircle, Clock, DollarSign, ShoppingCart } from "lucide-react";
 
 import Header from "../components/common/Header"
 import StatCard from "../components/common/StatCard";
+import DailyOrders from "../components/orders/DailyOrders";
+import OrderDistribution from "../components/orders/OrderDistribution";
 
 const ORDERS_STATS = {
   totalOrders: 1234, 
@@ -15,7 +17,7 @@ const ORDERS_STATS = {
 const OrdersPage = () => {
   return (
     <div className="flex-1 overflow-auto relative z-10">
-      <Header title="Users" />
+      <Header title="Orders" />
       <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8">
         {/* STATS */}
         <motion.div 
@@ -49,6 +51,13 @@ const OrdersPage = () => {
             color="#EF4444"
           />
         </motion.div>
+
+        {/* ORDERS CHARTS */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+          <DailyOrders />
+          <OrderDistribution />
+        </div>
+        
       </main>
     </div>
   )
