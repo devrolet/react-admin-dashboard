@@ -14,13 +14,13 @@ import { Link } from "react-router-dom";
 
 // TODO: Adapt to fit eventual use case, maybe add model for Typescript uses
 const SIDEBAR_ITEMS = [
-  { name: "Overview", icon: BarChart2, color: "#08b2f5", href: "/" },
-  { name: "Products", icon: ShoppingBag, color: "#08b2f5", href: "/products" },
-  { name: "Users", icon: Users, color: "#08b2f5", href: "/users" },
-  { name: "Sales", icon: DollarSign, color: "#08b2f5", href: "/sales" },
-  { name: "Orders", icon: ShoppingCart, color: "#08b2f5", href: "/orders" },
-  { name: "Analytics", icon: TrendingUp, color: "#08b2f5", href: "/analytics" },
-  { name: "Settings", icon: Settings, color: "#08b2f5", href: "/settings" }
+  { name: "OVERVIEW", icon: BarChart2, color: "#08b2f5", href: "/" },
+  { name: "PRODUCTS", icon: ShoppingBag, color: "#08b2f5", href: "/products" },
+  { name: "USERS", icon: Users, color: "#08b2f5", href: "/users" },
+  { name: "SALES", icon: DollarSign, color: "#08b2f5", href: "/sales" },
+  { name: "ORDERS", icon: ShoppingCart, color: "#08b2f5", href: "/orders" },
+  { name: "ANALYTICS", icon: TrendingUp, color: "#08b2f5", href: "/analytics" },
+  { name: "SETTINGS", icon: Settings, color: "#08b2f5", href: "/settings" }
 ];
 
 const Sidebar = () => {
