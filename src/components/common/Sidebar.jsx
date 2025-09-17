@@ -9,7 +9,6 @@ import {
   Users 
 } from "lucide-react";
 import { useState } from "react";
-// eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
