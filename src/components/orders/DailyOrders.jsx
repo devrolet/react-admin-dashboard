@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
@@ -45,7 +45,9 @@ const DailyOrders = () => {
                   dot={{ fill: "#6366F1", strokeWidth: 2, r: 6 }}
                   activeDot={{ r: 8, strokeWidth: 2}}
                 />
+                <Legend />
               </LineChart>
+              
             </ResponsiveContainer>
           </div>
         </motion.div>

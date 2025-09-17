@@ -105,7 +105,7 @@ const UsersTable = () => {
                   <button className="text-indigo-400 hover:text-indigo-300 mr-2">
                     <Edit size={18} />
                   </button>
-                   <button className="text-red-400 hover:text-indigo-300 mr-2">
+                   <button className="text-red-400 hover:text-red-300 mr-2">
                     <Trash2 size={18} />
                   </button>
                 </td>
